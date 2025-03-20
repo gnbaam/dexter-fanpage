@@ -1,0 +1,155 @@
+@import url('assets/fonts/fonts.css');
+body {
+    font-family: 'Blood Crow', sans-serif;
+    background-image:url('assets/images/Fondo.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    padding-top: 195px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+header {
+    font-family: 'Blood Crow', sans-serif;
+    background: #900000;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 1000;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background: #900000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#ff0000;
+}
+
+
+.Logo{
+    margin: 0.1px;
+    width: 250px;
+    height: auto;
+}
+
+.biografia-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.biografia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.biografia-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.biografia-text {
+    max-width: 800px;
+    text-align: left;
+}
+
+.biografia-text ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .biografia-content {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .biografia-img {
+        margin-right: 20px;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+    .biografia-text {
+        max-width: 55%;
+    }
+}
+
+.intro-container,.conclusion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.intro-content,.conclusion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.intro-text,.conclusion-text {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.conclusion-text {
+    font-style: italic;
+}
