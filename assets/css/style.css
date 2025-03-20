@@ -1,0 +1,129 @@
+@import url('assets/fonts/fonts.css');
+
+/* Estilo general */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding-top: 200px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+/* Header y Navegación */
+header {
+    font-family: 'Blood Crow', sans-serif;
+    background: #900000;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 1000;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background: #900000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    z-index: 1000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Blood Crow', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    color:#900000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color:#ff0000;
+    text-decoration: underline;
+}
+
+div {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.Logo{
+    width: 250px;
+    height: auto;
+}
+
+
+.contenido {
+    display: flex;
+    align-items: center; 
+    text-align: left;
+    gap: 20px;
+}
+
+
+.Dexter1 {
+    width: 300px; 
+    border-radius: 10px;
+    padding: 30px;
+}
+
+
+.texto {
+    flex: 1; 
+}
+
+.ImgInicio {
+    display: block; margin: auto;
+    width: 500px; 
+    border-radius: 10px;
+    padding: 30px;
+}
